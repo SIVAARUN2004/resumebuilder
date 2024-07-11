@@ -1,0 +1,46 @@
+<body>
+    <header>
+    <div class="container">
+      <h1>DynamicCV - Recruiter Login</h1>
+      <nav>
+        <ul>
+          <li><a href="/user-register" class="profile-link">Profile</a></li>
+          <li><a href="#" class="settings-link">Settings</a></li>
+          <li><a href="/login" class="logout-link">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome Back, {{u_name}}</h2>
+      <p>This is your personalized dashboard where you can manage your account.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <h3>Create Resume</h3>
+        <p>Create Your Personalized Resume</p>
+        <button (click)="navigateTo('/res-form')">Create Resume</button>
+      </div>
+      <div class="feature">
+        <h3>Find Jobs</h3>
+        <p>Adjust settings to customize your experience.</p>
+        <!--<button (click)="navigateTo('/res-form')">Find Jobs</button>-->
+      </div>
+      <div class="feature">
+        <h3>Notifications</h3>
+        <p>Stay informed with important notifications.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 DynamicCV. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
